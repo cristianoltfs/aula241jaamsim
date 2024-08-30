@@ -1,6 +1,7 @@
 
 RecordEdits
 
+Define ExpressionThreshold { ExpressionThreshold1 }
 Define EntityGenerator { EntityGenerator1 }
 Define EntitySink { EntitySink1 }
 Define Queue { Queue1  Queue2 }
@@ -36,7 +37,7 @@ Server2 ServiceTime { 15  s }
 
 Simulation RealTime { TRUE }
 Simulation SnapToGrid { TRUE }
-Simulation RealTimeFactor { 64 }
+Simulation RealTimeFactor { 4 }
 Simulation ShowLabels { TRUE }
 Simulation ShowSubModels { TRUE }
 Simulation ShowEntityFlow { TRUE }
@@ -48,8 +49,12 @@ Simulation ShowPropertyViewer { FALSE }
 Simulation ShowLogViewer { FALSE }
 Simulation ModelBuilderPos { 0  144 }
 Simulation ModelBuilderSize { 210  319 }
+Simulation OutputViewerPos { 740  560 }
+Simulation OutputViewerSize { 1  38 }
 Simulation LogViewerPos { 504  560 }
 Simulation LogViewerSize { 510  215 }
+
+ExpressionThreshold1 Position { -0.7  1.9  0.0  m }
 
 EntityGenerator1 Position { 2.1  -1.1  0.0  m }
 
@@ -109,9 +114,14 @@ Title FontStyle { BOLD }
 # *** View ***
 
 View1 Description { 'Default view window' }
-View1 ViewCenter { 4.0  0.5  -6.556879  m }
-View1 ViewPosition { 4.0  0.5  10.763629  m }
+View1 ViewCenter { 3.7  0.6  -6.556879  m }
+View1 ViewPosition { 3.7  0.6  10.763629  m }
 View1 WindowSize { 794  423 }
 View1 ShowWindow { TRUE }
 View1 Lock2D { TRUE }
 View1 SkyboxImage { <res>/images/sky_map_2048x1024.jpg }
+Validation Error - ExpressionThreshold1: An input must be provided for the keyword 'OpenCondition'.
+
+Input Error: 1 input errors and 0 warnings found
+Validation Error - ExpressionThreshold1: An input must be provided for the keyword 'OpenCondition'.
+
